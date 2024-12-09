@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+//it for react 18 version . add 'client' 
 
 // {}--> it takes html tags atrributes like ID, CLASSES
 //react.createElement(object)-->Html(browser understands it )
@@ -18,20 +22,15 @@
      </div>
 */
 
+const jsxheading = <h1> HEllo BY JSX </h1>;
 
 
 
+/*const heading= 
+React.createElement("div" ,{id:"parent"}, "HELLO VAISHNAVI by REACT"); */
 
-const heading= 
-React.createElement("div" ,{id:"parent"}, 
-  [React.createElement("div" ,{id:"child"},
-     [React.createElement("h1" ,{}, "I am H1 tag"),React.createElement("h2" ,{}, "I am H2 tag")]
-), React.createElement("div" ,{id:"child2"},
- [   gitReact.createElement("h1" ,{}, "I am H1 tag"),
-  React.createElement("h2" ,{}, "I am H2 tag")
-  ]), 
-]);
+const root = ReactDOM.createRoot(document.getElementById("root")); 
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(jsxheading); 
+
